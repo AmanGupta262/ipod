@@ -2,7 +2,6 @@ import React from "react";
 
 import "./list.component.css";
 import nature from "../../assets/img/nature.jpg";
-// import ludo from "../../assets/img/ludo.jpg";
 import game from "../../assets/img/game.jpg";
 import settings from "../../assets/img/settings.svg";
 import music from "../../assets/img/music.jpg";
@@ -10,6 +9,7 @@ import music from "../../assets/img/music.jpg";
 const List = ({ active, show = "menu", menu }) => {
   return (
     <>
+      {/* show menu on click of menu btn */}
       {show === "menu" && (
         <>
           <div className="image full">
@@ -31,6 +31,7 @@ const List = ({ active, show = "menu", menu }) => {
           </div>
         </>
       )}
+      {/* showing cover flow on clicking cover flow */}
       {show === "cover flow" && (
         <div className="d-flex heading full">
           <div className="image full">
@@ -38,6 +39,7 @@ const List = ({ active, show = "menu", menu }) => {
           </div>
         </div>
       )}
+      {/* showing music on clicking music */}
       {show === "music" && (
         <div className="d-flex heading full">
           <div className="image full">
@@ -45,6 +47,7 @@ const List = ({ active, show = "menu", menu }) => {
           </div>
         </div>
       )}
+      {/* showing settings on clicking settings */}
       {show === "settings" && (
         <div className="d-flex heading full">
           <div className="image full">
@@ -52,6 +55,7 @@ const List = ({ active, show = "menu", menu }) => {
           </div>
         </div>
       )}
+      {/* showing games on clicking games */}
       {show === "games" && (
         <div className="d-flex heading full">
           <div className="image full">

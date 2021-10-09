@@ -11,7 +11,10 @@ const Menu = () => {
   const [active, setActive] = useState(-1);
   const [show, setShow] = useState("menu");
 
+  // handling center button click
   const onCenterClick = () => setShow(menu[active].toLowerCase());
+
+  // handling menu button click
   const onMenuClick = () => setShow("menu");
 
   useEffect(() => {
@@ -20,6 +23,7 @@ const Menu = () => {
       ref.current,
       "rotate",
       (e) => {
+        // changing active menu
         const deg = Math.abs(Math.floor(e.detail.angle));
         if (deg > 0 && deg < 70) setActive(0);
         else if (deg > 70 && deg < 170) setActive(1);

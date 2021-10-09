@@ -1,11 +1,11 @@
-import Menu from "../menu";
+import { Menu } from "..";
 import "./app.component.css";
 
 const App = () => {
   return (
     <div className="app-container">
       <div className="ipod-container">
-        <Menu onMenuClick={() => console.log("menu")} onCenterClick={() => console.log("center")} />
+        <Menu />
       </div>
     </div>
   );
